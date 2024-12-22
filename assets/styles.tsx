@@ -1,15 +1,16 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 // Example dark theme colors
-const colors = {
-  background: '#121212',
-  text: '#EAEAEA',
-  primary: '#BB86FC',
-  secondary: '#03DAC6',
-  border: '#333333',
-  cardBackground: '#1E1E1E',
-  buttonBackground: '#6200EE',
-  buttonText: '#FFFFFF',
+export const colors = {
+  background: "#121212",
+  text: "#EAEAEA",
+  primary: "#BB86FC",
+  secondary: "#03DAC6",
+  border: "#333333",
+  cardBackground: "#1E1E1E",
+  buttonBackground: "#6200EE",
+  buttonText: "#FFFFFF",
+  card: "#282828",
 };
 
 const styles = StyleSheet.create({
@@ -17,15 +18,23 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.background,
     padding: 20,
-    flexDirection:"column",
-    justifyContent:"space-between"
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
-  buttonContainer:{
-marginBottom:0
+  title: {
+    fontSize: 28,
+    fontWeight: "bold", 
+    color: colors.text,
+    textAlign: "center",
+    marginTop: 40,
+    marginBottom: 20,
+  },
+  buttonContainer: {
+    marginBottom: 0,
   },
   header: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: colors.text,
     marginBottom: 10,
   },
@@ -38,13 +47,13 @@ marginBottom:0
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 5,
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 15,
   },
   buttonText: {
     color: colors.buttonText,
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   card: {
     backgroundColor: colors.cardBackground,
@@ -56,7 +65,7 @@ marginBottom:0
   },
   cardTitle: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: colors.text,
   },
   cardDescription: {
@@ -74,29 +83,29 @@ marginBottom:0
     marginTop: 10,
   },
   footer: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 10,
     left: 0,
     right: 0,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     padding: 10,
   },
-  textHeader:{
-    fontSize:24,
-    color:"white", 
-    fontWeight:"900",
-    textAlign:"center",
-  } , 
-  labelText:{
-    marginTop:50,
-    color:colors.secondary, 
+  textHeader: {
+    fontSize: 24,
+    color: "white",
+    fontWeight: "900",
+    textAlign: "center",
   },
-  sloganText:{
-    color:colors.secondary,
-    textAlign:"center", 
-    marginTop:5
-  }
+  labelText: {
+    marginTop: 50,
+    color: colors.secondary,
+  },
+  sloganText: {
+    color: colors.secondary,
+    textAlign: "center",
+    marginTop: 5,
+  },
 });
 
 export default styles;

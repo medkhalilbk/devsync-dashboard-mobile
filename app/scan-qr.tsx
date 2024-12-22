@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   },
   errorMessage: {
     textAlign: "center",
-    color: "red",
+    color: "red", 
     fontSize: 18,
     fontWeight: "bold",
   },
